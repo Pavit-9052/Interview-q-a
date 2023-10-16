@@ -1,0 +1,18 @@
+''' Getting the line as input
+Breaking them into words 
+Initializing count as 0
+Iterating the words list till last
+Using if checking whether the current and the next word is 'the'
+Inside this if again checking there is no 'a' in between them
+If there is no 'a' then increment the count'''
+
+Code:
+text = "The king went to the forest with the wife and a servant. The king shot a deer. The king went to the forest again the next day."
+s=text.lower()
+words = s.split()
+count = 0
+for i in range(len(words) - 1):
+    if words[i] == 'the' and words[i + 1] == 'the':
+        if words[i - 1] != 'a':
+            count += 1
+print(count)
