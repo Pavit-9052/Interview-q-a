@@ -1,0 +1,33 @@
+class Restaurant {
+// private name, food type and opening of the restaurant
+    private String RestaurantName;         
+    private String FoodType;  
+    private boolean open;       
+
+  
+
+   // Public method 
+    String getRestaurantName() {
+        return restaurantname;
+    }
+
+    // Public method 
+    String getFoodType() {
+        return FoodType;
+    }
+
+    // Public method 
+    boolean isOpen() {
+        return open;
+    }
+
+    // Public method 
+    void openRestaurant() {
+        open = true;
+    }
+
+    // Public method 
+    void closeRestaurant() {
+        open = false;
+    }
+}
